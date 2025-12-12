@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--BOOTSTRAP Y TIPOGRAFIA-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra Nonna</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <meta name="description" content="Portfolio personal de diseño web con Bootstrap."> <meta name="author" content="Dall Anese Dominguez Kevin"> <link rel="icon" href="favicon.png" type="image/png">
+  
+  </head>
+
+<body id="inicio" data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <!-- LOADER INICIO -->
+<div id="nn-loader">
+  <div class="ojo-container">
+    <img src="ojo.svg" alt="ojo Nostra Nonna" class="ojo">
+  </div>
+</div>
+<!-- LOADER FIN -->
+  <main>
+    
+      <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logonostranona.png" alt="Logo" width="110" height="70" class="me-2">
+      </a>
+
+      <!-- BOTÓN RESPONSIVE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item">
+            <form class="d-flex" role="search">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="" aria-label="Buscar">
+            <button class="btn btn-search" type="submit">
+          <i class="bi bi-search"></i>
+       </button>
+     </form>
+</li>
+<li class="nav-item">
+            <a class="nav-link" href="#envivo">En Vivo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clases">Clases</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<!--CARTELERA-->
+  <section class="cartelera-section text-center my-5">
+  <div class="container">
+    <h2 class="cartelera-titulo mb-4">Cartelera</h2>
+<section id="cartelera" class="cartelera-section"></section>
+    <div id="carteleraCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- IMÁGENES -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="hecate.jpg" class="d-block w-100 rounded-4" alt="Publicidad sobre la obra Hecate">
+        </div>
+        <div class="carousel-item">
+          <img src="lilith.jpg" class="d-block w-100 rounded-4" alt="Charla formativa sobre Lilith">
+        </div>
+        <div class="carousel-item">
+          <img src="mitos.jpg" class="d-block w-100 rounded-4" alt="Charla sobre mitos del opcultismo">
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carteleraCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carteleraCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+      <!-- INDICADORES (movidos fuera de la imagen) -->
+      <div class="carousel-indicators-wrapper mt-3">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carteleraCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+          <button type="button" data-bs-target="#carteleraCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+          <button type="button" data-bs-target="#carteleraCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASES DE TEATRO-->
+<section class="seccion-teatro d-flex align-items-center justify-content-center" id="clases" class="seccion-teatro">
+  <div class="container-fluid text-center position-relative p-0">
+    
+    <!-- Imágenes laterales (solo escritorio grande) -->
+    <img src="bafi triste.png" alt="Decoración izquierda" class="decoracion decoracion-izquierda d-none d-xl-block">
+    <img src="bafi feliz.png" alt="Decoración derecha" class="decoracion decoracion-derecha d-none d-xl-block">
+
+    <!-- Contenido central -->
+    <div class="contenido-teatro mx-auto">
+
+      <!-- Imagen superior (visible en tablets y móviles) -->
+      <img src="bafi triste.png" alt="Decoración superior" class="decoracion-movil-superior d-block d-xl-none">
+
+      <h3 class="titulo-teatro text-left">Clases de Teatro</h3>
+
+      <p class="texto-teatro text-left">
+        En este espacio donde el telón se alza entre mundos, y el escenario se convierte en un ritual. Inspirado en símbolos ocultistas, tradiciones esotéricas y el poder transformador del teatro, nuestro espacio es mucho más que un recinto artístico: es un templo de expresión y descubrimiento.
+      </p>
+
+      <!-- Este párrafo se ocultará solo en móviles -->
+      <p class="texto-teatro texto-secundario text-left">
+        Ofrecemos talleres y clases de actuación dirigidas a quienes buscan explorar su potencial escénico desde una perspectiva distinta. Nuestro enfoque combina técnicas teatrales tradicionales con ejercicios de introspección, simbología y trabajo energético.
+      </p>
+
+      <!-- Botón -->
+      <div class="boton-derecha text-rigth">
+        <button type="button" class="btn btn-leer-mas" data-bs-toggle="modal" data-bs-target="#modalClases">
+  Leer más
+</button>
+      </div>
+
+      <!-- Imagen inferior (visible en tablets y móviles) -->
+      <img src="bafi feliz.png" alt="Decoración inferior" class="decoracion-movil-inferior d-block d-xl-none">
+    </div>
+  </div>
+</section>
+
+ <!-- CÍRCULO DE DEBATE -->
+<section class="slide-hero position-relative d-flex align-items-center justify-content-start"  id="debate">
+    <div class="slide-bg" style="background-image: url('circulo\ de\ debate.jpg');"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content text-light">
+      <h2 class="slide-title">Círculo de debate</h2>
+      <p class="slide-text">Un espacio para el pensamiento crítico, el intercambio profundo y la exploración de ideas: el Círculo de Debate.</p>
+      <p class="slide-text slide-secundario">Más que discusiones, son encuentros donde lo filosófico, lo simbólico y lo escénico se entrelazan.</p>
+      <p class="slide-text"><strong>Temas:</strong> Arte, misticismo, transformación, teatro como ritual y canal de poder.</p>
+
+      <div class="boton-derecha">
+        <button type="button" class="btn btn-leer-mass" data-bs-toggle="modal" data-bs-target="#modalDebate">
+  Leer más
+</button>
+      </div>
+    </div>
+  </section>
+
+ <!--EN VIVO-->
+   <section class="slide-video" id="envivo">
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-8 col-12">
+          <video class="video-en-vivo" controls poster="preview.jpg">
+            <source src="Dall Anese Dominguez Kevin - contenedor.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-lg-4 col-12 texto-video text-center">
+          <img src="ojos arriba.png" alt="Decoración superior" class="img-superior">
+          <h2 class="titulo-video">Nuestro canal en vivo</h2>
+          <p>Visitanos y suscribite para estar al tanto de todas nuestras transmisiones</p>
+          <img src="ojos abajo.png" alt="Decoración inferior" class="img-inferior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SOBRE NOSOSTROS-->
+<section class="slide-hero slide-sobre-nosotros position-relative d-flex align-items-center justify-content-start"  id="nosotros" class="slide-sobre-nosotros">
+  <!-- Carrusel de imágenes de fondo -->
+  <div id="fondoRotativoRojo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="teatro1.jpg" class="d-block w-100 fondo-slide-img" alt="Fondo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="teatro2.jpg" class="d-block w-100 fondo-slide-img" alt="Fondo 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Fade rojo sobre el fondo -->
+  <div class="slide-overlay-rojo"></div>
+
+  <div class="slide-content text-light">
+    <h2 class="slide-title">Sobre nosotros</h2>
+
+    <p class="slide-text">
+      Nostra Nonna es un templo ocultista. Nos consideramos un refugio para aquellas almas que buscan expresar su fe a través del arte.
+      Mantenemos las costumbres de nuestra fundadora, transmitiendo la liturgia mediante el don de la teatralidad.
+    <p class="slide-text">
+      Esta es un establecimiento que se mantuvo a lo largo de tres generaciones y que busca adaptarse a los tiempos modernos.
+      Contamos con una escuela de teatro para todos aquellos miembros que quieran ser parte de nuestro oficio. En esta damos tanto herramientas de comunicación, como también transmitimos las historias que serán narradas a los demás.
+    </p>
+
+    <div class="boton-derecha">
+     <button type="button" class="btn btn-leer-mas" data-bs-toggle="modal" data-bs-target="#modalNosotros">
+  Leer más
+</button>
+    </div>
+  </div>
+</section>
+
+<!--UBICACION CONTACTO Y FOOTER-->
+<section class="ubicacion-contacto" id="contacto" class="ubicacion-contacto">
+<div class="fondo-patron"></div>
+<div class="fade-bg"></div>
+<div class="contenido">
+<div class="col izquierda">
+        <h2 class="titulo">Ubicación</h2>
+        <div class="mapa-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.8919606479344!2d-57.947958799999995!3d-34.9091607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e63886f146cf%3A0x36b2b4b3eab03998!2sTeatro%20%22La%20Nonna%22!5e0!3m2!1ses-419!2sar!4v1759522547856!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="direccion">Calle 47 395 Centro, B1900 La Plata, Provincia de Buenos Aires</div>
+        </div>
+      </div>
+      <div class="col derecha">
+        <h2 class="titulo">Contáctanos</h2>
+        <form class="formulario">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="xxxx@example.com" required>
+          <label for="mensaje">Asunto:</label>
+          <textarea id="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+          <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+</section>
+</main>
+
+<a href="#inicio" class="btn-volver-arriba" aria-label="Volver arriba">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!--FOOTER-->
+<footer class="footer">
+  <div class="footer-contenido">
+    
+    <!-- Redes -->
+    <div class="footer-redes-info">
+      <p class="redes-titulo">Nuestras Redes</p>
+      <p class="redes-user">@NostraNonna</p>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+
+    <!--Links -->
+    <div class="links">
+      <div class="columna-links">
+        <a href="#cartelera">Cartelera</a>
+        <a href="#clases">Clases de teatro</a>
+      </div>
+      <div class="columna-links">
+        <a href="#debate">Círculo de debate</a>
+        <a href="#envivo">Nuestro canal en vivo</a>
+      </div>
+      <div class="columna-links">
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#contacto">Políticas de privacidad y cookies</a>
+      </div>
+    </div>
+
+    <!--Logo -->
+    <div class="logo-footer">
+      <img src="logonostranonaR.png" alt="Nostra Nonna">
+    </div>
+  </div>
+</footer>
+
+<!--Le pedi a Gemini que lo anime porque no sabia como-->
+<script>
+  // 1. Selecciona el botón
+  const btnVolverArriba = document.querySelector('.btn-volver-arriba');
+
+  // 2. Crea la función para mostrar/ocultar
+  const toggleBotonArriba = () => {
+    // Si el scroll vertical es mayor a 300px...
+    if (window.scrollY > 300) {
+      // ...añade la clase 'visible'
+      btnVolverArriba.classList.add('visible');
+    } else {
+      // ...de lo contrario, quítala
+      btnVolverArriba.classList.remove('visible');
+    }
+  }
+
+  // 3. Ejecuta la función cada vez que el usuario haga scroll
+  window.addEventListener('scroll', toggleBotonArriba);
+</script>
+
+<div class="modal fade" id="modalClases" tabindex="-1" aria-labelledby="modalClasesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalClasesLabel">Clases de Teatro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>En este espacio donde el telón se alza entre mundos, y el escenario se convierte en un ritual. Inspirado en símbolos ocultistas, tradiciones esotéricas y el poder transformador del teatro, nuestro espacio es mucho más que un recinto artístico: es un templo de expresión y descubrimiento.</p>
+        <p>Ofrecemos talleres y clases de actuación dirigidas a quienes buscan explorar su potencial escénico desde una perspectiva distinta. Nuestro enfoque combina técnicas teatrales tradicionales con ejercicios de introspección, simbología y trabajo energético.</p>
+        <p>Creemos que actuar no es fingir, sino desvelar. Nuestros estudiantes aprenden a canalizar emociones crudas y a conectar con arquetipos universales, utilizando el escenario como un círculo sagrado para la catarsis y la revelación. El objetivo no es solo crear un personaje, sino desmantelar las máscaras cotidianas para encontrar la verdad auténtica que yace en las sombras de cada uno, transformando al intérprete en un verdadero alquimista de su propia presencia.</p>
+        <h6 class="mt-4">Misión</h6>
+        <p>Nuestra misión es redefinir el arte de la actuación como una senda de alquimia personal. Buscamos guiar a cada individuo a través de las sombras y los símbolos de su propio ser, utilizando las herramientas del teatro no como un fin en sí mismo, sino como una llave maestra para el autoconocimiento profundo. Nos dedicamos a desvelar la verdad auténtica que reside más allá de la máscara social, transformando el escenario en un espacio sagrado donde la expresión cruda y la presencia consciente se fusionan para revelar el poder oculto que habita en cada intérprete.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-leer-mas" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDebate" tabindex="-1" aria-labelledby="modalDebateLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDebateLabel">Círculo de Debate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Un espacio para el pensamiento crítico, el intercambio profundo y la exploración de ideas: el Círculo de Debate. Más que discusiones, son encuentros donde lo filosófico, lo simbólico y lo escénico se entrelazan.</p>
+        <p><strong>Temas:</strong> Arte, misticismo, transformación, teatro como ritual y canal de poder.</p>
+        <p>En este círculo, la palabra se trata con la misma reverencia que el gesto en el escenario; no es un arma para competir, sino una herramienta para excavar. Cada encuentro es moderado como un rito, donde no buscamos un consenso superficial, sino una resonancia colectiva. Es un laboratorio de pensamiento donde la retórica se encuentra con la revelación, y cada participante aporta una pieza al mosaico de una comprensión más profunda, forjando una comunidad que se atreve a preguntar lo que otros solo susurran.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-leer-mass" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalNosotros" tabindex="-1" aria-labelledby="modalNosotrosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalNosotrosLabel">Sobre Nosotros</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Nostra Nonna es un templo ocultista. Nos consideramos un refugio para aquellas almas que buscan expresar su fe a través del arte. Mantenemos las costumbres de nuestra fundadora, transmitiendo la liturgia mediante el don de la teatralidad.</p>
+        <p>Esta es un establecimiento que se mantuvo a lo largo de tres generaciones y que busca adaptarse a los tiempos modernos. Contamos con una escuela de teatro para todos aquellos miembros que quieran ser parte de nuestro oficio. En esta damos tanto herramientas de comunicación, como también transmitimos las historias que serán narradas a los demás.</p>
+        <p>Esta herencia de tres generaciones no es una carga, sino un ancla. Nos permite afianzar nuestros ritos en una tradición probada, mientras adaptamos las formas de nuestra liturgia a la sensibilidad contemporánea. No alteramos el mensaje; refinamos el canal. Por ello, nuestra escuela no forma meros actores, sino custodios de un misterio. Cada miembro que se une a nuestro oficio aprende que la "comunicación" es, en esencia, comunión, y que las "historias" que narramos no son ficciones, sino ecos vivientes de la fe que nuestra fundadora encendió por primera vez.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-leer-mas" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  window.onload = function() {
+    const loader = document.getElementById('nn-loader');
+    
+    // 1. Añade la clase para empezar el fade-out
+    loader.classList.add('loader-hidden');
+    
+    // 2. Después de la animación (500ms = 0.5s), 
+    //    lo oculta para que no interfiera.
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 500);
+  };
+</script>
+
+</body>
+</html>
